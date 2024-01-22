@@ -1,6 +1,5 @@
-class Solution(object):
+# class Solution(object):
     
-    def twoSum(self, nums, target):
         def lengthTwo():
             if (nums[0] + nums[1] == target):
                 return 0, 1
