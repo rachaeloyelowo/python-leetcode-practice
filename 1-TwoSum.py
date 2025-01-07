@@ -1,7 +1,7 @@
 class Solution(object):
     def twoSum(self, nums, target):
 
-        hashMap = {}  # val : index
+        hashMap = {}  
 
         for i, n in enumerate(nums):
             diff = target - n
