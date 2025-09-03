@@ -14,23 +14,18 @@ class Solution:
         nxtIndex = 1
         skipNxt = False
         
-
         for char in s:
             if skipNxt:
                 skipNxt = False
                 nxtIndex += 1
                 continue
-            
-
+    
             if nxtIndex < len(s) and romanNums[s[nxtIndex]] > romanNums[char]:
                 skipNxt = True
                 num -= romanNums[char]
                 num += romanNums[s[nxtIndex]]
             else:
                 num += romanNums[char]
-
             nxtIndex += 1
-            
-            
 
         return num
